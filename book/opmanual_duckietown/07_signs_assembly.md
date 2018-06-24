@@ -4,7 +4,7 @@ Assigned: Liam Paull
 
 <div class='requirements' markdown="1">
 
-Requires: The raw materials as described in [](#duckietown_parts)
+Requires: The raw materials as described in [](+opmanual_duckietown#duckietown_parts)
 
 Results: A set of signs to be used for assembling your Duckietown.
 
