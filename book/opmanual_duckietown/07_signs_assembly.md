@@ -12,9 +12,9 @@ Results: A set of signs to be used for assembling your Duckietown.
 
 ## Build a map
 
-Before beginning with sign assembly you should design a map that adheres to [the specification](#duckietown-specs).
+Before beginning with sign assembly you should design a map that adheres to [the specification](+opmanual_duckietown#duckietown-specs).
 
-An example that was used for the 2017 version of the class is here: [](#fall2017-map)
+An example that was used for the 2017 version of the class is here: [](+class_fall_2017#fall2017-map)
 
 The full set of currently existing signs is available here: [pdf](https://github.com/duckietown/Software/blob/master/catkin_ws/src/20-indefinite-navigation/apriltags_ros/signs_and_tags/Signs_and_tags_V3.pdf) [docx](https://github.com/duckietown/Software/blob/master/catkin_ws/src/20-indefinite-navigation/apriltags_ros/signs_and_tags/Signs_and_tags_V3.docx)
 
