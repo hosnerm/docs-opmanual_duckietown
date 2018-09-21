@@ -48,7 +48,7 @@ Open another terminal
 
     laptop $ make auto_localization_calibration_laptop IP:=![IP_address] map=![your map]
 
-Open another terminal and open ssh connections to all watchtowers through [xpanes](#xpanes) and [tmux](#tmux). Execute the command on watchtowers
+Open another terminal and open ssh connections to all watchtowers through xpanes and tmux<!--[xpanes](#xpanes) and [tmux](#tmux)-->. Execute the command on watchtowers
 
     duckiebot $ make auto_localization_calibration_watchtower IP:=![IP_address]
 
