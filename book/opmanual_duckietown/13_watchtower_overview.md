@@ -1,6 +1,6 @@
 # Auto-Localization Overview {#auto-localization-overview status=draft}
 
-Assigned: Chen-Lung Eric Lu, Josephine Quack
+Assigned: Chen-Lung Eric Lu, Josefine Quack
 
 The auto-localization system is an important part of AI-DO competition. Since we need to score each team with the performances of their cars, it's necessary to have a system to localize and track the movement of these Duckiebots.
 

@@ -1,6 +1,6 @@
 # Auto-Localization Operation Procedure {#auto-localization-operation-procedure status=draft}
 
-Assigned: Chen-Lung Eric Lu, Josephine Quack
+Assigned: Chen-Lung Eric Lu, Josefine Quack
 Last Update:
 
 In this document, we wrote down the procedure of launching Auto-localization system.
@@ -68,7 +68,7 @@ Open another terminal
 
     laptop $ make auto_localization_laptop IP:=![IP_address] map=![your map]
 
-Open another terminal and open ssh connections to all watchtowers through [xpanes](#xpanes) and [tmux](#tmux). Execute the command on watchtowers
+Open another terminal and open ssh connections to all watchtowers through xpanes and tmux <!-- [xpanes](#xpanes) and [tmux](#tmux)-->. Execute the command on watchtowers
 
     duckiebot $ make auto_localization_watchtower IP:=![IP_address]
 

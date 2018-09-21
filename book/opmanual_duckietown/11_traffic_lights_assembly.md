@@ -410,11 +410,11 @@ Fully assembled traffic light.
 ### Image Prepare
 Prepare a Duckiebot image and remember to add your machine file (till 11.5)
 
-See: [](#setup-duckiebot)
-
+<!-- See: [](#setup-duckiebot) -->
+See setup-duckiebot
 and this chapter
-
-See: [](#rc-control)
+See rc-control
+<!-- See: [](#rc-control) -->
 
 Please use "tlo" for all traffic light/camera tower username, and "trafficlight#" for hostname. (# indicate 1, 2, 3..etc.) Also we suggest you to give every traffic light a same password.
 

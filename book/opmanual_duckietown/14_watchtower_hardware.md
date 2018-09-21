@@ -1,6 +1,6 @@
 # Auto-Localization Hardware Preparation {#auto-localization-hardware status=draft}
 
-Assigned: Chen-Lung Eric Lu, Josephine Quack
+Assigned: Chen-Lung Eric Lu, Josefine Quack
 
 This document teaches you how to prepare a whole set of watchtower, which includes, hardware preparation, hardware assembly, image preparation and setting up watchtowers in a city.
 
@@ -143,7 +143,9 @@ TODO: Add picture of the rest steps.
 
 The image setup is the same procedure of preparing images for Duckiebots.
 
-See [](#setup-duckiebot)
+<!-- See [](#setup-duckiebot) -->
+
+See setup-duckiebot
 
 In the robotarium of ETH Zurich, the watchtowers has username **mom**, hostname **watchtowerXX** (where XX specify the number of the watchtower.) and password **MomWatches**.
 
@@ -157,7 +159,9 @@ Prepare this Image until Step 8.11 but **DON’T** do ssh configuration. (You co
 
 Name the watchtower `mom@watchtower01` with username `mom` and hostname `watchtower01`. Set the password to `MomWatches`.
 
-See: [](#setup-duckiebot)
+<!-- See [](#setup-duckiebot) -->
+
+See setup-duckiebot
 
 If you wanna skip step 1~4 and save some time, you could simply download this image.
 
@@ -176,7 +180,9 @@ There're two option for copying to 49 SD cards.
 Save your first image from SD cards to laptop.
 Plug in the SD card and umount it, you can see this chapter as reference.
 
-See: [](#sdcards)
+<!-- See: [](#sdcards) -->
+
+See sdcards
 
 Then use this command to save image from the SD card.
 
@@ -186,7 +192,9 @@ After this step, you will have your watchtower image in your laptop.
 
 Then, put SD cards into USB adapters, insert as many SD cards as you can to your laptop. Burn the watchtower image to those image simultaneously.
 
-See: [](#sdcards)
+<!-- See: [](#sdcards) -->
+
+See sdcards
 
 ##### Option 2: Use SD card Duplicator
 
@@ -206,7 +214,8 @@ First, change the hostname of the watchtower into `watchtowerXX`, where XX means
 
 Afterwards, checkout 8.11 SSH configuration and set up the ssh configuration. You only need to do basic SSH config, create key pair.
 
-See: [](#ssh)
+<!-- See: [](#ssh) -->
+See ssh
 
 That's all! Redo the step for each SD card then you'll have all the SD cards ready.
 
