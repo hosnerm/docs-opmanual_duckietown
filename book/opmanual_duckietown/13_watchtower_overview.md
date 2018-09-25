@@ -24,7 +24,7 @@ TODO: Add concept picture
 
 ## Hardware
 
-The hardware the system relies on are "wathctowers". A watchtower is a tower composed of Raspberry Pi 3 B+, and a pi camera on the very top of the tower (of course and other little components, we'll discuss that in the hardware chapter). The watchtowers are like surveillant cameras inside a Duckietown. With the camera on the top of the tower, we could see a field of town in view. Therefore, we could track a Duckiebot whenever it goes into the field of view of a watchtower.
+The hardware the system relies on are "watchtowers". A watchtower is a tower composed of Raspberry Pi 3 B+, and a pi camera on the very top of the tower (of course and other little components, we'll discuss that in the hardware chapter). The watchtowers are like surveillant cameras inside a Duckietown. With the camera on the top of the tower, we could see a field of town in view. Therefore, we could track a Duckiebot whenever it goes into the field of view of a watchtower.
 
 The system are designed that watchtowers don't need to be in a specific height or pose as long as they could see a sufficient field of view and closed enough to track Apriltags in its field of view. However, we still provide the spec of the watchtowers so that one could produce watchtowers without testing field of view.
 
