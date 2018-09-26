@@ -46,7 +46,7 @@ After placing the tags, execute these commands on your server computer to start 
 
 Open another terminal
 
-    laptop $ make auto_localization_calibration_laptop IP:=![IP_address] map=![your map]
+    laptop $ make auto_localization_calibration_laptop IP:=![IP_address] map:=![your map]
 
 Open another terminal and open ssh connections to all watchtowers through xpanes and tmux<!--[xpanes](#xpanes) and [tmux](#tmux)-->. Execute the command on watchtowers
 
@@ -66,7 +66,7 @@ First on your server computer, execute following commands. ![IP_address] should 
 
 Open another terminal
 
-    laptop $ make auto_localization_laptop IP:=![IP_address] map=![your map]
+    laptop $ make auto_localization_laptop IP:=![IP_address] map:=![your map]
 
 Open another terminal and open ssh connections to all watchtowers through xpanes and tmux <!-- [xpanes](#xpanes) and [tmux](#tmux)-->. Execute the command on watchtowers
 
