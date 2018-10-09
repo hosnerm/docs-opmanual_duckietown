@@ -9,13 +9,13 @@ In this document, we wrote down the procedure of launching Auto-localization sys
 
 The purpose of this chapter is to guide all robotarium builders in the world to successfully launch the Auto-localization system.
 
-The procedure including two part, map setup, system calibration and system localization The system calibration procedure should calculate and save the transformation matrixes from local tags frame to the origin tag frame. The system localization procedure is simply the localization function.
+The procedure including two part, map setup, system calibration and system localization The system calibration procedure should calculate and save the transformation matrices from local tags frame to the origin tag frame. The system localization procedure is simply the localization function.
 
 ## Map Setup
 
 ### Reference tag setup
 
-There should be at least one reference tag in the field of views of each watchtowers. The reference tags could be traffic sign tags or we could put tags there. The only thing to aware is that don't out a tag in the city twice.
+There should be at least one reference tag in the field of views of each watchtowers. The reference tags could be traffic sign tags or any other tag placed in the field of view. The only thing to aware is to not place the very same tag in the city twice.
 
 ### Map file setup
 
