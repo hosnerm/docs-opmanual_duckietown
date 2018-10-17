@@ -259,7 +259,7 @@ To fix things the following is needed:
 Bend the LED strip at an angle to reduce
 the chance that the exposed soldered wires do not short.
 
-<div figure-id="fig:TL-02">
+<div figure-id="fig:L-0">
 <img src="images/L-0.png" style="width: 80%"/>
 <figcaption>
 Bended LED strip cable
