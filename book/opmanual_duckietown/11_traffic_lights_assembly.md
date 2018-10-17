@@ -223,39 +223,53 @@ These components are needed for one traffic light:
 
 * Tube holder with big ground plate
 * Tube holder with small ground plate (Duckietown)
-* Cable with soldered LED stripe
-* 2 Joint modules
+* Cable with soldered LED strip
+* Joint module (2x)
 * Traffic light LED housing
 * Raspberry Pi base plate
 * Ground module cover (Duckietown)
 * Camera mount
 * Camera mount cover
 * Short tube
-* 2 Medium tubes
+* Medium tube (2x)
 * Long tube with hole at the side
 * Raspberry Pi
 * Raspberry Pi shield
+* M2.5x10 MF Nylon spacers (8x)
+* M2.5x8 Nylon screws (4x)
 * SD card with Duckietown software
 * USB cable
 * Ethernet cable
-* 4 Traffic sign stands
-* 4 Traffic sign stand supports
+* Traffic sign stands (4x)
+* Traffic sign stand supports (4x)
 
 To fix things the following is needed:
 
 * Tape
+* Double-Sided Tape
 * Wood glue or a hot glue gun
 
 
 ## Assembling the Traffic Light
 
 
+
 ### Put the LEDs into the housing
+
+Bend the LED strip at an angle to reduce
+the chance that the exposed soldered wires do not short.
+
+<div figure-id="fig:TL-02">
+<img src="images/L-0.png" style="width: 80%"/>
+<figcaption>
+Bended LED strip cable
+</figcaption>
+</div>
 
 <div figure-id="fig:TL-02">
 <img src="images/TL-02.jpg" style="width: 80%"/>
 <figcaption>
-Cable with soldered LED stripe LED housing
+Cable with soldered LED strip LED housing
 </figcaption>
 </div>  
 <div figure-id="fig:TL-03">
@@ -308,7 +322,16 @@ Add the joint modules on the side of the tube without the cable.
 <figcaption>
 </figcaption>
 </div>    
-Mount the other joint module on the long tube, such that it aligns with the hole.  
+Mount the other joint module on the long tube, such that it aligns with the hole.
+
+You can add additional tape under the joint modules to prevent them to slip down.
+<div figure-id="fig:H-1">
+<img src="images/H-1.png" style="width: 80%"/>
+<figcaption>
+Fully assembled traffic light.
+</figcaption>
+</div>
+
 
 <div figure-id="fig:TL-11">
 <img src="images/TL-11.jpg" style="width: 80%"/>
@@ -351,6 +374,11 @@ Put the tubes into the tube holders.
 
 
 ### Connect the Raspberry Pi
+
+
+Use the spacers and the screws to mount the
+Raspberry Pi on the Raspberry Pi ground plate
+as shown in the Picture.
 
 <div figure-id="fig:TL-18">
 <img src="images/TL-18.jpg" style="width: 80%"/>
@@ -406,6 +434,12 @@ Close the ground module with the case.
 Fully assembled traffic light.
 </figcaption>
 </div>
+
+Place the traffic light at an intersection such that the LEDs are exactly in the
+middle and are facing each incoming lane perpendicular.
+Use double-sided tape to fix the traffic light to the ground.
+
+
 
 ### Image Prepare
 Prepare a Duckiebot image and remember to add your machine file (till 11.5)
