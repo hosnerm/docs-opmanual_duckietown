@@ -2,7 +2,16 @@
 
 Assigned: Shiying Li
 
+## Design a map
 
-Follow the rules in the [](+opmanual_duckietown#duckietown-specs).
+According to the specifications presented in [](#duckietown-specs), design your Duckietown.
 
-Comment: do we need this page at all?
+## Build it!
+
+Once you are sure that all the specifications are met, build it. In case you have traffic lights or watchtowers, refer respectively to [](#traffic-light-assembly) and [](#auto-localization-hardware).
+
+## Bring it to life!
+
+Populate your city with tons of Duckies!
+
+TODO: Add pic of many Duckies
