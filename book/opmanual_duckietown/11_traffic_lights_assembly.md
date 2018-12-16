@@ -18,6 +18,8 @@ Traffic lights node are expected to launch whenever they turn on.
 ## Assembly of the traffic light parts
 This section shows how to assemble the components from the laser cut traffic light parts.
 
+Warning: The small parts with the hole in te middle, i.e. the ones in the left of [](#fig:G-1), are not all equal. Some have a round hole, others a polygonal hole. Double check you are using the right ones in the process (compare with the pics).
+
 <div class='requirements' markdown="1">
 
 Requires: Laser cut traffic light parts []  

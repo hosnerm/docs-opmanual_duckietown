@@ -72,7 +72,7 @@ Currently, the left turn and right turn tiles are symmetric: one is the 90 degre
 
 There are 3 colors of tapes: white, yellow, and red.
 
-#### White tape 
+#### White tape
 
 \begin{proposition}\label{prop:white_tape}
 A Duckiebot never collides with Duckietown if it never crosses or touches a white tape strip.
@@ -184,7 +184,7 @@ A "yield" sign should be visible from the launch tile.
 
 ## Traffic Signs {#traffic-signs status=beta}
 
-Requires: To print and assemble the signs refer to [](+opmanual_duckietown#signage).
+Requires: To print and assemble the signs refer to [](#signage).
 
 ### Specs
 

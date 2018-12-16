@@ -4,7 +4,7 @@ Assigned: Liam Paull
 
 <div class='requirements' markdown="1">
 
-Requires: The raw materials as described in [](+opmanual_duckietown#duckietown_parts)
+Requires: The materials to build Duckietown signals.
 
 Results: A set of signs to be used for assembling your Duckietown.
 
@@ -12,7 +12,7 @@ Results: A set of signs to be used for assembling your Duckietown.
 
 ## Build a map
 
-Before beginning with sign assembly you should design a map that adheres to [the specification](+opmanual_duckietown#duckietown-specs).
+Before beginning with sign assembly you should design a map that adheres to [the specification](#duckietown-specs).
 
 An example that was used for the 2017 version of the class is here: [](+fall2017_info#fall2017-map)
 
@@ -65,7 +65,19 @@ TODO: Update the way that the april tags code loads the database
 
 ## Assembly
 
-To assemble the signs, you should print out the pdf version of the signs and tags file on the thickest card stock available. Cut the signs out with a straight edge and a very sharp knife, leaving a small border of white around the sign. Then use double-sided tape or some other adhesive to affix the the paper sign to the wooden base.
+### Print the signals
+
+TODO: add pdfs with intersections
+
+First, you should print out the pdf version of the signs and tags file on the thickest card stock available. Cut the signs out with a straight edge and a very sharp knife, leaving a small border of white around the sign.
+
+### Assemble the stands
+
+Assemble the wooden base of the signals, according to the following instructions.
+
+TODO: write
+
+Then use the provided sticker to affix the the paper sign to the wooden base.
 
 
 ## Placement
