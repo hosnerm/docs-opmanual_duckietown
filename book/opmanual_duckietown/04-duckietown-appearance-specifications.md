@@ -1,6 +1,6 @@
-# Duckietown Appearance Specification {#duckietown-specs status=beta}
+# Appearance Specifications {#dt-ops-appearance-specifications status=beta}
 
-This document describes the Duckietown specification. These are a set of rules for which a functional system has been verified.
+This document describes the Duckietown specification. These are a set of rules for which a functional system has been verified. This means that if these rules are followed while building a Duckietown, Duckiebots will (most probably!) work.
 
 Any Duckietown not adhering to the rules described here cannot call itself a "Duckietown", since it is not one.
 
@@ -13,19 +13,23 @@ the different Duckietowns.
 
 * Version 1.0 - used for MIT 2.166
 
-* Version 2.0 - user for Fall 2017
+* Version 2.0 - user for Fall 2017 and throughout 2018.
 
-## Overview
+<!--
+
+Overview
 
 Duckietown is built with two layers:
-
 1. The first is the *floor layer*. The floor is built of interconnected exercise mats with tape on them.
 2. The second layer is the *signals layer* and contains all the signs and other objects that sit on top of the mats.
 
-Note: the visual appearance of the area where the Duckietown is created is variable. If you discover that this appearance is causing negative performance, a "wall" of blank tiles constructed vertically can be used to reduce visual clutter.
+Note that the visual appearance of the area where the Duckietown is created is variable. If you discover that this appearance is causing negative performance, a "wall" of blank tiles constructed vertically can be used to reduce visual clutter.
+
+-->
 
 
-## Layer 1 - The Tile Layer
+
+## Layer 1 - The Tile Layer {#dt-ops-floor-app-specs status=beta}
 
 Each tile is a 2 ft x 2 ft square and is able to interlock with the others.
 
@@ -72,7 +76,7 @@ Currently, the left turn and right turn tiles are symmetric: one is the 90 degre
 
 There are 3 colors of tapes: white, yellow, and red.
 
-#### White tape 
+#### White tape
 
 \begin{proposition}\label{prop:white_tape}
 A Duckiebot never collides with Duckietown if it never crosses or touches a white tape strip.
@@ -184,7 +188,7 @@ A "yield" sign should be visible from the launch tile.
 
 ## Traffic Signs {#traffic-signs status=beta}
 
-Requires: To print and assemble the signs refer to [](+opmanual_duckietown#signage).
+Requires: To print and assemble the signs refer to [](+docs-opmanual_duckietown#signage).
 
 ### Specs
 

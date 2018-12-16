@@ -1,38 +1,10 @@
 # Auto-Localization Hardware Preparation {#auto-localization-hardware status=draft}
 
-Assigned: Chen-Lung Eric Lu, Josefine Quack
-
 This document teaches you how to prepare a whole set of watchtower, which includes, hardware preparation, hardware assembly, image preparation and setting up watchtowers in a city.
 
 ## Overview
 
 This chapter will guild you what to prepare for building watchtowers and how to assemble them. Also, we'll talk about image preparation. Whenever the watchtowers and the images are prepared, we would give some advices for putting the watchtowers into the city.
-
-## Bill of Material
-
-This is the bill of material for preparing one watchtower.
-
-<div markdown="1">
-
- <col2 id='materials-watchtower' figure-id="tab:materials-watchtower" figure-caption="Bill of materials for a watchtower">
-    <s>[Wooden Plates] </s>                    <s>USD ??</s>
-    <s>[Tubes] </s>                         <s>USD ??</s>
-    <s>[Rpi B+](https://tinyurl.com/ybyng4hf) </s>                         <s>USD 35</s>
-    <s>[Rpi B+ Heat Sink]() </s>                         <s>USD 10</s>
-    <s>[Pi Camera G](https://tinyurl.com/y9dnv2x5) </s>                         <s>USD 28.99</s>
-    <s>[1m Camera Cable](https://www.adafruit.com/product/2143) </s>                <s>USD 3.95</s>
-    <s>[16 GB Class 10 MicroSD Card](https://tinyurl.com/ydawrgdx) </s>              <s>USD 10</s>
-    <s>[3m USB to Micro USB Cables](https://goo.gl/BHfaYY) </s>                <s>USD 2.99</s>
-    <s>[5m thin Ethernet cables]() </s>                <s>USD 7.99</s>
-    <s>[USB Charger] </s>                         <s>USD 30</s>
-    <s>[Glue](https://tinyurl.com/y87xjpx8) </s>                         <s>USD 1.7</s>
-    <s>[M2.5, 12mm Spacers * 2]() </s>                         <s>USD 1</s>
-    <s>[M2.5, 6mm Screws * 2]() </s>                         <s>USD 1</s>
-    <s>[M2.5, 4mm Screws * 2]() </s>                         <s>USD 1</s>
-    <s>Total for a set of watchtower</s>                         <s>USD ??</s>
- </col2>
-
-</div>
 
 ## Before Assembly
 

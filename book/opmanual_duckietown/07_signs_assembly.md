@@ -4,7 +4,7 @@ Assigned: Liam Paull
 
 <div class='requirements' markdown="1">
 
-Requires: The raw materials as described in [](+opmanual_duckietown#duckietown_parts)
+Requires: The raw materials as described in [](+docs-opmanual_duckietown#duckietown_parts)
 
 Results: A set of signs to be used for assembling your Duckietown.
 
@@ -12,7 +12,7 @@ Results: A set of signs to be used for assembling your Duckietown.
 
 ## Build a map
 
-Before beginning with sign assembly you should design a map that adheres to [the specification](+opmanual_duckietown#duckietown-specs).
+Before beginning with sign assembly you should design a map that adheres to [the specification](+docs-opmanual_duckietown#duckietown-specs).
 
 An example that was used for the 2017 version of the class is here: [](+fall2017_info#fall2017-map)
 

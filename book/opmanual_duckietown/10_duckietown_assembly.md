@@ -1,8 +1,7 @@
-# Duckietown Assembly {#duckietown-assembly status=draft}
+# Assembly {#part:dt-ops-assembly status=ready}
 
-Assigned: Shiying Li
+Here are some tips on how to assemble a Duckietown efficiently while respecting the [appearance specifications](#dt-ops-appearance-specifications).
 
-
-Follow the rules in the [](+opmanual_duckietown#duckietown-specs).
-
-Comment: do we need this page at all?
+* [](#dt-ops-tiles): How to assemble road tiles.
+* [](#dt-ops-city-traffic-signs): How to assemble traffic signs.
+* [](#traffic-light-assembly): How to assemble traffic lights.
