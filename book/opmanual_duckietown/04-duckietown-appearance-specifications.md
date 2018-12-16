@@ -188,7 +188,7 @@ A "yield" sign should be visible from the launch tile.
 
 ## Traffic Signs {#traffic-signs status=beta}
 
-Requires: To print and assemble the signs refer to [](+docs-opmanual_duckietown#signage).
+Requires: To print and assemble the signs refer to [](#signage).
 
 ### Specs
 

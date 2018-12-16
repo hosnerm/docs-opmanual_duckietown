@@ -27,6 +27,8 @@ TODO: Add picture of tube
 
 ## Watchtower Assembly
 
+TODO: These instructions are outdated.
+
 ### Wooden Box (with Raspberry Pi)
 These are all the parts for assembly the wooden chasis.
 <div figure-id="fig:wt_boxes_part" figure-caption="The parts for wooden box assemble.">
