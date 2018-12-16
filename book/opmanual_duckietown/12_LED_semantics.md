@@ -1,4 +1,4 @@
-# Semantics of LEDS {#LED-semantics status=draft}
+# Semantics of LEDS {#LED-semantics-other status=draft}
 
 Since different implementations could mean different semantic mappings, a versioning is kept here to maintain overview.
 

@@ -4,7 +4,7 @@ Here are some tips on how to assemble a Duckietown efficiently while respecting 
 
 ## Design a map
 
-According to the specifications presented in [](#duckietown-specs), design your Duckietown.
+According to the specifications presented in [](#dt-ops-appearance-specifications), design your Duckietown.
 
 ## Build it!
 
