@@ -1,7 +1,6 @@
 # Auto-Localization Operation Procedure {#auto-localization-operation-procedure status=draft}
 
-Assigned: Chen-Lung Eric Lu, Josefine Quack
-Last Update:
+TODO: Move this to the Robotarium book.
 
 In this document, we wrote down the procedure of launching Auto-localization system.
 

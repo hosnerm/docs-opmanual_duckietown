@@ -1,37 +1,47 @@
-# Duckietown Appearance Specification {#duckietown-specs status=beta}
+# Appearance Specifications {#dt-ops-appearance-specifications status=beta}
 
-This document describes the Duckietown specification. These are a set of rules for which a functional system has been verified.
+<div class='requirements' markdown="1">
 
-Any Duckietown not adhering to the rules described here cannot call itself a "Duckietown", since it is not one.
+Requires: Nothing.
 
-Additionally, any Duckietown not adhering to these rules may cause the Duckiebots to fail in unexpected ways.
+Results: Knowledge of the Duckietown appearance specifications
 
-## Version history
+Next Steps: [Duckietowns and Duckiebots](#dt-ops-city-definitions), or [Duckietown assembly](#dt-ops-assembly ).
 
-Note here the changes to the specification, so that we are able to keep in sync
-the different Duckietowns.
+</div>
+
+This document describes the Duckietown appearance specification. Specifications are a set of rules for which a functional system has been verified. This means that if these rules are followed while building a Duckietown, Duckiebots will (most probably!) work.
+
+Any Duckietown not adhering to the rules described here cannot be considered a Duckietown, and may cause the Duckiebots operating within them to fail in unexpected ways.
+
+Small perturbations to the appearance specifications might affect negatively the performance of Duckiebots, although most algorithms are robust to variations.
+
+<!--
+
+Version history
+
+Note here the changes to the specification, so that we are able to keep the different Duckietowns synchronized.
 
 * Version 1.0 - used for MIT 2.166
 
-* Version 2.0 - user for Fall 2017
+* Version 2.0 - user for Fall 2017 and throughout 2018.
 
-## Overview
+Overview
 
 Duckietown is built with two layers:
-
 1. The first is the *floor layer*. The floor is built of interconnected exercise mats with tape on them.
 2. The second layer is the *signals layer* and contains all the signs and other objects that sit on top of the mats.
 
-Note: the visual appearance of the area where the Duckietown is created is variable. If you discover that this appearance is causing negative performance, a "wall" of blank tiles constructed vertically can be used to reduce visual clutter.
+Note that the visual appearance of the area where the Duckietown is created is variable. If you discover that this appearance is causing negative performance, a "wall" of blank tiles constructed vertically can be used to reduce visual clutter.
+
+-->
+
+## Layer 1 - The Floor Layer {#dt-ops-floor-app-specs status=ready}
+
+The floor layer is made of interlocking black tiles. Each tile represents one road element: straight, curve, 3-way intersection, 4-way intersection and empty tile. The road elements are interlocked to create Duckietowns. The tile types are shown in [](#fig:tiles). Note that the left turn and right turn tiles are symmetric: one is the 90 degree rotation of the other.
 
 
-## Layer 1 - The Tile Layer
-
-Each tile is a 2 ft x 2 ft square and is able to interlock with the others.
-
-There are six types of tiles, as shown in [](#fig:tiles).
-Currently, the left turn and right turn tiles are symmetric: one is the 90 degree rotation of the other.
-
+Each tile is square and measures 61 x 61 cm (2 ft x 2 ft) from the outer edges of the interlocking dents. The thickness of the tiles is not as important as the surface roughness. The objective is having good grip between the Duckiebots and the road in order to minimize slipping of the wheels.
 
 <div figure-id="fig:tiles" figure-class="flow-subfigures" figure-caption="The principal tile types in Duckietown">
     <div figure-id="subfig:straight" figure-caption="DT17_tile_straight">
@@ -55,7 +65,7 @@ Currently, the left turn and right turn tiles are symmetric: one is the 90 degre
 </div>
 
 
-<div figure-id="fig:DT17_map_loop3" figure-caption="A 3 by 3 loop (DT17_map_loop3)">
+<div figure-id="fig:DT17_map_loop3" figure-caption="A 3 by 3 city loop (DT17_map_loop3)">
     <img src="DT17_map_loop3-texture.png" style='width: 8cm'/>
 </div>
 
@@ -67,22 +77,23 @@ Currently, the left turn and right turn tiles are symmetric: one is the 90 degre
     <img src="DT17_usage_three_way-texture.png" style='width: 8cm'/>
 </div>
 
+For tiles to become road elements, we need to apply road markings. Road markings in 2017-18 are obtained through the application of tapes of different colors and sizes.
 
-### Tapes
+### Tapes {#dt-ops-app-spec-tapes status=ready}
 
-There are 3 colors of tapes: white, yellow, and red.
+There are 3 colors of tapes used in Duckietown: white, yellow, and red.
 
 #### White tape
 
 \begin{proposition}\label{prop:white_tape}
-A Duckiebot never collides with Duckietown if it never crosses or touches a white tape strip.
+A Duckiebot never collides with Duckiebots or other Duckietown elements if it never crosses or touches a white tape strip.
 \end{proposition}
 
 Here are some facts about the white tapes:
 
-* White tapes must be solid (not dashed)
+* White tapes must be solid (not dashed);
 
-* The width of the white tape is 2 inches (5.08 cm).
+* The width of the white tape is roughly 4.8cm (1.88 inches);
 
 * The white tape is always placed on the right hand side of a lane. We assume that the Duckiebots drive on the right hand side of the road.
 
@@ -94,27 +105,34 @@ Comment: this should be part of the "traffic rules" sections.
   <img src="curved_road.png" style='width: 30em; height:auto'/>
 </div>
 
-
 #### Yellow tape
 
-On a two-way road, the yellow tape should be dashed. Each piece should have a length of approximately **2 in** with a **1 in** gap separating each piece.
+Here are some facts about the yellow tapes:
 
-Yellow tapes on curves: see curved road image in white tape section, pieces at tile edges should be in center of lane, piece at the middle of the curve should be approximately 20.5 cm from middle of inner center white piece of tape, with approximated circular arc in between.
+* Yellow tape must be dashed (not solid);
+
+* Each piece should be **5 cm** long and placed with a **2.5 cm** gap between each piece;  
+
+* The width of the yellow tape is roughly 2.4cm (0.94 inches);
+
+* The yellow tape is always placed on the left hand side of a lane, i.e., in the center of the road. We assume that the Duckiebots drive on the right hand side of the road.
+
+Yellow tapes on curves: see curved road image ([](#fig:curved)) in white tape section. Pieces at tile edges should be in center of lane, piece at the middle of the curve should be approximately 20.5 cm from middle of inner center white piece of tape, with approximated circular arc in between.
 
 #### Red tape
 
 Red tapes MAY **only** appear on **intersection** tiles.
 
-The red tape must be the full width of the duck tape roll and should cross the entire lane perpendicular to the lane.
+The width of the red tape must be the same as the white roll (roughly 4.8cm or 1.88 inches) and should cross the entire lane perpendicular to the road.
 
-The placement of red tape should always be **under** yellow and white tape.
+The placement of red tape should always be **under** yellow and white tape, as shown, e.g., in [](#fig:DT17_usage_three_way) or [](#fig:DT17_usage_four_way).
 
 A Duckiebot navigates Duckietown by a sequence of:
 
-* Navigating one or more straight ties until a red tape appears,
+* Navigating one or more straight tiles until a red tape appears,
 * Wait for the coordination signal,
 * Execute an intersection traversal,
-* Relocalize in a StraightTile.
+* Relocalize in a straight tile.
 
 The guarantee is:
 
@@ -184,7 +202,7 @@ A "yield" sign should be visible from the launch tile.
 
 ## Traffic Signs {#traffic-signs status=beta}
 
-Requires: To print and assemble the signs refer to [](#signage).
+Requires: To print and assemble the signs refer to [](#dt-ops-city-traffic-signs).
 
 ### Specs
 

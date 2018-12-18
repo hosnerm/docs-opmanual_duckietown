@@ -1,12 +1,29 @@
 # Auto-Localization Hardware Preparation {#auto-localization-hardware status=draft}
 
-Assigned: Chen-Lung Eric Lu, Josefine Quack
-
 This document teaches you how to prepare a whole set of watchtower, which includes, hardware preparation, hardware assembly, image preparation and setting up watchtowers in a city.
 
 ## Overview
 
 This chapter will guild you what to prepare for building watchtowers and how to assemble them. Also, we'll talk about image preparation. Whenever the watchtowers and the images are prepared, we would give some advices for putting the watchtowers into the city.
+
+## Before Assembly
+
+### From Wooden Plates to Chasis Parts (Laser Cut):
+The plates should be 4mm thick. To cut a set of traffic light, you need a plates with the size of roughly 347mm x 256mm x 4mm.
+
+
+### Tubes Preparation:
+
+We only need one tubes here. The spec of the tube is listed down here.
+
+<col2 figure-id="tab:wt_escapes" figure-caption="Symbols to escape">
+    <s>Length: </s> <s>572mm</s>
+    <s>Diameter: </s> <s>20mm</s>
+</col2>
+
+We recommend you to buy a tube cutter. It'll save you from lots of troubles. After cutting the tube, you could polish the edges so that it won't heart you.
+
+TODO: Add picture of tube
 
 ## Watchtower Assembly
 

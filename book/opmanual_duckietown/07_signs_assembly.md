@@ -1,4 +1,4 @@
-# Signage {#signage status=draft}
+# Traffic Signs Assembly {#dt-ops-city-traffic-signs status=draft}
 
 Assigned: Liam Paull
 
@@ -12,7 +12,7 @@ Results: A set of signs to be used for assembling your Duckietown.
 
 ## Build a map
 
-Before beginning with sign assembly you should design a map that adheres to [the specification](#duckietown-specs).
+Before beginning with sign assembly you should design a map that adheres to [the specification](#dt-ops-appearance-specifications).
 
 An example that was used for the 2017 version of the class is here: [](+fall2017_info#fall2017-map)
 
