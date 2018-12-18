@@ -36,4 +36,4 @@ Navigable cities enable testing of Duckiebot behaviors. A complete list (for one
 
 ## Robotarium {#dt-ops-robotarium-def status=ready}
 
-Robotariums (Robotic acquariums) are experimental Duckietows designed for continuous operations. Robotariums require a maintenance area in addition to a Duckietown, providing essential functions like automatic charging. More information on Robotariums can be found here: [](+robotarium#book:robotarium).
+Robotariums (Robotic aquariums) are experimental Duckietowns designed for continuous operations. Robotariums require a maintenance area in addition to a Duckietown, providing essential functions like automatic charging. More information on Robotariums can be found here: [](+robotarium#book:robotarium).
