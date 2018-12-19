@@ -212,7 +212,7 @@ Generally, it is advisable to adhere signal layer elements to the tiles with dou
 Traffic signage in Duckietown in obtained through the union of a traffic signs and an April Tag, as shown in [](#fig:traffic-sign-example)
 
 <div figure-id="fig:traffic-sign-example" figure-caption="A traffic sign in Duckietown (do not print this one out!)">
-  <img src="traffic-sign-example.png" style='width: 30em; height:auto'/>
+  <img src="traffic-sign-example.png" style='width: 20em; height:auto'/>
 </div>
 
 We call the symbol above _traffic sign_, while the code below is an AprilTag.
@@ -232,7 +232,6 @@ For traffic signage to be compliant:
 ### Types
 
 The allowable traffic signs are as in [](#fig:traffic-signs).
-
 
 <div figure-id="fig:traffic-signs" figure-class="flow-subfigures" figure-caption="Duckietown Traffic Signs">
   <div figure-id="subfig:stop" figure-caption="stop">
@@ -282,15 +281,19 @@ The allowable traffic signs are as in [](#fig:traffic-signs).
   </div>
 </div>
 
-
-
-### Placement {#traffic-signs-placement status=beta}
+### Placement {#traffic-signs-placement status=ready}
 
 Signs may appear on the opposite side and at the corner of the adjacent tile from which they are viewed. In the absence of any signs, it is assumed that all network flows are allowed so a sign MUST be placed and visible whenever this is not the case.
 
-Signs must only be placed on empty tiles, or next to one of the other tile types if on the border of a map. The sign placements for four different cases are shown in [](#sign-placement). At intersections, from each stop line 2 signs should be clearly visible: 1) the intersection type (traffic light or stop sign) and 2) the intersection topology.
+Signs must only be placed on empty tiles, or next to one of the other tile types if on the border of a map. As mentioned, it is important to not overlap the base of the sign stand with any road marking.
+
+The sign placements for four different cases are shown in [](#sign-placement). At intersections, from each stop line 2 signs should be clearly visible: 1) the intersection type (traffic light or stop sign) and 2) the intersection topology (3-way with correct orientation, or 4-way).
+
+<!--
 
 At present, 4-way intersections must be equipped with traffic lights for safe navigation.
+
+-->
 
 <div figure-id="fig:sign-placement" figure-class="flow-subfigures" figure-caption="Placement of Traffic Signs">
   <div figure-id="subfig:4-way-signs" figure-caption="4-way intersection">
@@ -314,29 +317,31 @@ In these figures the arrow is the direction of the sign.
 
 ## Street Name Signs {#street-name-signs status=beta}
 
-### Specs
+### Specifications
 
 
 * Font: arial.
 
-* Color: Perhaps we could start with real-world settings: white as foreground and green as background.
+* Color: white as foreground and green as background.
 
-* Border: currently no additional borders
+* Border: no additional borders
 
 * The rounded corners are modified into 90 degrees.
 
-* Height: sign board height is 1.5 in. (**2.1 in**),
+* Height: center of the sign height is 1.5 in. (**2.1 in**),
 
 * Width: Currently 4.5 in for id 500-511. (**6.1 in +1.1 in "ST" or 5.5 in + 1.7 in “AVE”**)
 
 * Alphabet =  English upper case. Different writing systems may need different algorithms.
 
-* Text direction: Horizontal for alphabetical languages
+* Text direction: Horizontal for alphabetical languages.
+
+TODO: clarify street name conventions
 
 
 ### Placement
 
-* **Similar to traffic light**: The street name should sit on a pole that is based at the corner of the tile outside of the allowable driving region. The bottom of the street name should be at a height of 7in, and allow a duckiebot to pass through. The street names should be visible from both sides of the road.
+* **Similar to traffic lights**: The street name should sit on a pole that is based at the corner of the tile outside of the allowable driving region. The bottom of the street name should be at a height of 7in, and allow a Duckiebot to pass through. The street names should be visible from both sides of the road.
 
 Every segment of road must have at least one road name sign.
 
@@ -353,22 +358,21 @@ The placement of the road name signs is as indicated in [](#fig:name-placement).
   </div>
 </div>
 
-
-
 Street name signs should never be perpendicular to the road - they are too big and obtrusive.
 
+## Traffic Lights {#traffic-light-app-spec status=ready}
 
+Requires: The assembly procedure for building the a traffic light is found in [](#traffic-light-assembly).
 
-## Traffic Lights
-
-Requires: The assembly procedure for building the a traffic light is found in [](#traffic-light-assembly)
-
-### Specs
-
-TOWRITE: towrite
 
 ### Placement
 
-The lights must be at a height of exactly 20 cm  above the center of the intersection tile.
+The lights must be at a height of 20 cm above the center of the intersection tile.
+
+<!--
 
 The Raspberry Pi should sit on a pole that is based at the corner of the tile outside of the allowable driving region.
+
+-->
+
+The computational stack of the traffic light should be mounted in the appropriate housing outside the allowable driving region. The cabling should be housed in the appropriate structure as detailed in [](#traffic-light-assembly). The traffic light pillar stands should be positioned in such a way that the embedded traffic sign stands respect the above specifications for traffic light stands. 
