@@ -1,7 +1,5 @@
 # Traffic Signs Assembly {#dt-ops-city-traffic-signs status=draft}
 
-Assigned: Liam Paull
-
 <div class='requirements' markdown="1">
 
 Requires: The materials to build Duckietown signals.
@@ -80,7 +78,6 @@ Assemble the wooden base of the signals, according to the following instructions
 TODO: write
 
 Then use the provided sticker to affix the the paper sign to the wooden base.
-
 
 ## Placement
 
