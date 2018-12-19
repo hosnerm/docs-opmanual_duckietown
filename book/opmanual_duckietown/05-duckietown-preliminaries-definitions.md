@@ -1,4 +1,4 @@
-# Duckietowns and Duckiebots {#dt-ops-city-definitions status=beta}
+# Duckietowns and Duckiebots {#dt-ops-city-definitions status=ready}
 
 <div class='requirements' markdown="1">
 
@@ -42,7 +42,7 @@ Thee more complex Duckiebot behaviors require intersections and other city eleme
 
 Navigable cities are city loops connected by intersections, meeting the appearance specification. Navigable cities require traffic signs.
 
-Navigable cities enable testing of Duckiebot behaviors. A complete list (for one or more Duckiebots) of behaviors can be found here: [](https://github.com/duckietown/docs-robotarium/blob/master/book/robotarium/00_book_robotarium.md).
+Navigable cities enable testing of Duckiebot behaviors. A complete list (for one or more Duckiebots) of behaviors can be found in the [demo section](https://github.com/duckietown/docs-robotarium/blob/master/book/robotarium/00_book_robotarium.md) of the Duckiebot operation manual.
 
 ## Robotarium {#dt-ops-robotarium-def status=ready}
 
