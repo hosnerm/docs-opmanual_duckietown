@@ -1,6 +1,10 @@
 # Assembly {#part:dt-ops-assembly status=ready}
 
-Here are some tips on how to assemble a Duckietown efficiently while respecting the [appearance specifications](#dt-ops-appearance-specifications).
+To assemble a Duckietown, follow this workflow:
+
+## Read the appearance specifications
+
+You can find them here: [](#dt-ops-appearance-specifications).
 
 ## Design a map
 
@@ -8,14 +12,19 @@ According to the specifications presented in [](#dt-ops-appearance-specification
 
 ## Build it!
 
-Once you are sure that all the specifications are met, build it. In case you have traffic lights or watchtowers, refer respectively to [](#traffic-light-assembly) and [](#auto-localization-hardware).
+Once you are sure that all the specifications are met, build it.
+
+You can refer to these resources for assembly tips on the various city elements:
+
+* [Roads](#dt-ops-tiles);
+* [Traffic signs](#dt-ops-city-traffic-signs);
+* [Traffic lights](#traffic-light-assembly);
+* [Watchtowers](#auto-localization-hardware);
 
 ## Bring it to life!
 
 Populate your city with tons of Duckies!
 
-TODO: Add pic of many Duckies
-
-* [](#dt-ops-tiles): How to assemble road tiles.
-* [](#dt-ops-city-traffic-signs): How to assemble traffic signs.
-* [](#traffic-light-assembly): How to assemble traffic lights.
+<div figure-id="fig:tons-of-duckies" figure-caption="Just another day in Duckietown: the city of joy and relaxed introspection">
+  <img src="tons-of-duckies.jpg" style='width: 30em; height:auto'/>
+</div>

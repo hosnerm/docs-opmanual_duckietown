@@ -1,7 +1,5 @@
 # Traffic Signs Assembly {#dt-ops-city-traffic-signs status=draft}
 
-Assigned: Liam Paull
-
 <div class='requirements' markdown="1">
 
 Requires: The materials to build Duckietown signals.
@@ -16,16 +14,18 @@ Before beginning with sign assembly you should design a map that adheres to [the
 
 An example that was used for the 2017 version of the class is here: [](+fall2017_info#fall2017-map)
 
-The full set of currently existing signs is available here: [pdf](https://github.com/duckietown/Software/blob/master/catkin_ws/src/20-indefinite-navigation/apriltags_ros/signs_and_tags/Signs_and_tags_V3.pdf) [docx](https://github.com/duckietown/Software/blob/master/catkin_ws/src/20-indefinite-navigation/apriltags_ros/signs_and_tags/Signs_and_tags_V3.docx)
+The full set of currently existing signs is available here: [pdf](https://github.com/duckietown/Software/blob/master18/catkin_ws/src/20-indefinite-navigation/apriltags_ros/signs_and_tags/Signs_and_tags_V3.pdf) [docx](https://github.com/duckietown/Software/blob/master18/catkin_ws/src/20-indefinite-navigation/apriltags_ros/signs_and_tags/Signs_and_tags_V3.docx)
 
-The set of tags used for the 2017 map are available here: [pdf](https://github.com/duckietown/Software/blob/master/catkin_ws/src/20-indefinite-navigation/apriltags_ros/signs_and_tags/Signs_and_tags_2017.pdf) [docx](https://github.com/duckietown/Software/blob/master/catkin_ws/src/20-indefinite-navigation/apriltags_ros/signs_and_tags/Signs_and_tags_2017.docx)
+The set of tags used for the 2017 map are available here: [pdf](https://github.com/duckietown/Software/blob/master18/catkin_ws/src/20-indefinite-navigation/apriltags_ros/signs_and_tags/Signs_and_tags_2017.pdf) [docx](https://github.com/duckietown/Software/blob/master18/catkin_ws/src/20-indefinite-navigation/apriltags_ros/signs_and_tags/Signs_and_tags_2017.docx)
 
 
 ## Making New Signage {#making-new-signage}
 
 If you find that what is available in the database in insufficient for your needs, then you will need to add to the existing database.
 
-To do so you will have to load the original AprilTags file available here: [pdf](https://github.com/duckietown/Software/blob/master/catkin_ws/src/20-indefinite-navigation/apriltags_ros/signs_and_tags/tag36h11.pdf) [ps](https://github.com/duckietown/Software/blob/master/catkin_ws/src/20-indefinite-navigation/apriltags_ros/signs_and_tags/tag36h11.ps)
+
+To do so you will have to load the original AprilTags file available here: [pdf](https://github.com/duckietown/Software/blob/master18/catkin_ws/src/20-indefinite-navigation/apriltags_ros/signs_and_tags/tag36h11.pdf) [ps](https://github.com/duckietown/Software/blob/master18/catkin_ws/src/20-indefinite-navigation/apriltags_ros/signs_and_tags/tag36h11.ps)
+
 
 Which tag you should use depends on what type of sign you are trying add. The ranges of tags are specified in [](#tab:tag-ranges).
 
@@ -38,13 +38,13 @@ Which tag you should use depends on what type of sign you are trying add. The ra
 
 </col4>
 
-First, find the last sign of the type that you are trying to make in the [signs and tags doc](https://github.com/duckietown/Software/blob/master/catkin_ws/src/20-indefinite-navigation/apriltags_ros/signs_and_tags/Signs_and_tags_V3.docx). You will use the next available ID after this one.
+First, find the last sign of the type that you are trying to make in the [signs and tags doc](https://github.com/duckietown/Software/blob/master18/catkin_ws/src/20-indefinite-navigation/apriltags_ros/signs_and_tags/Signs_and_tags_V3.docx). You will use the next available ID after this one.
 
 Construct the new sign by first copying and pasting an existing sign of similar type, and then replacing/adding the new AprilTag. To add the new april tag, use a screen capture mathod to crop precisely around the tag at the top and sides and include the sign id at the bottom. Then paste the tag into your word file under your desired and resize it exactly 6.5cm (2.56inches).
 
 If you make a new road name sign, you may need to change the font size of the name so that it appears on one line (this is why we like people with names like "ROY" and "RUS").
 
-Important: You must also add your new sign to the [April Tags DB](https://github.com/duckietown/Software/blob/master/catkin_ws/src/20-indefinite-navigation/apriltags_ros/signs_and_tags/apriltagsDB.yaml) in the software repo.
+Important: You must also add your new sign to the [April Tags DB](https://github.com/duckietown/Software/blob/master18/catkin_ws/src/20-indefinite-navigation/apriltags_ros/signs_and_tags/apriltagsDB.yaml) in the software repo.
 
 Add a new block like the ones that already exists or modify the one with the appropriate tag id:
 ```
@@ -78,7 +78,6 @@ Assemble the wooden base of the signals, according to the following instructions
 TODO: write
 
 Then use the provided sticker to affix the the paper sign to the wooden base.
-
 
 ## Placement
 

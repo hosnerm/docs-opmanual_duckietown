@@ -1,42 +1,50 @@
-# Traffic Lights Assembly {#traffic-light-assembly status=draft}
+# Traffic Lights Assembly {#traffic-light-assembly status=beta}
 
-Maintainer: Eric Lu, Josefine Quack
+<div class='requirements' markdown="1">
 
-Traffic lights are useful to coordinate heavy traffic at busy intersections during rush hour in Duckietown.  
+Requires: Material: Traffic light components. To obtain them contact info@duckietown.org.
+
+Requires: An [initialized SD-card](+opmanual_duckiebot#).
+
+Requires: Tools: (strong) wood glue or hot glue gun, tape, double-sided tape.
+
+Result: Traffic light.    
+</div>  
+
+
+Traffic lights are useful to coordinate traffic at intersections. Traffic lights can be used at three or four way intersections. Hardware wise, Traffic lights are Duckiebots without wheels, and a beautiful different chassis.
+
+Reminder: for traffic lights to be recognized by Duckiebots, appropriate signage must be placed at intersections (traffic light traffic sign instead of stop sign).
+
 This section describes the physical assembly and installation of traffic lights.  
 
 ## Overview
 
-Traffic lights are crucial parts in modern cities. We rely on them to have well-organized traffic. While antonymous cars could communicate with each other through so many different kinds of communication protocol, humans can't. Unless you are a terminator, or a RoboCop, or Neo. In the near future where autonymous cars drive with human drivers, we still need the help of traffic lights.
+<!--
 
-About the hardware part, the traffic light is composed with two wooden boxes on the diagonal direction of an intersection. On of them is equipped with raspberry pi and other cables for localization usage.
+Traffic lights are crucial parts in modern cities. We rely on them to have well-organized traffic. While autonomous cars could communicate with each other through so many different kinds of protocols, humans can't. Unless you are a terminator, or a RoboCop, or Neo. In the near future where autonomous cars drive with human drivers, we still need the help of traffic lights.
 
-TODO: Add a photo of one intersection with a traffic light.
+-->
+
+Traffic lights are composed of two wooden boxes on the diagonal direction of an intersection. One of them is equipped with the computational stack and connection to the a camera.
+
+TODO: Add a photo of one intersection with a **new model** traffic light (as in pics below).
+
+<!--
 
 Traffic lights node are expected to launch whenever they turn on.
 
+-->
+
 ## Assembly of the traffic light parts
+
 This section shows how to assemble the components from the laser cut traffic light parts.
 
-Warning: The small parts with the hole in te middle, i.e. the ones in the left of [](#fig:G-1), are not all equal. Some have a round hole, others a polygonal hole. Double check you are using the right ones in the process (compare with the pics).
+Warning: The small parts with the hole in the middle, i.e., the ones in the left of [](#fig:G-1), are not all equal. Some have a round hole, others a polygonal hole. Double check you are using the right ones in the process (compare with the pics).
 
-<div class='requirements' markdown="1">
-
-Requires: Laser cut traffic light parts []  
-
-Requires: Strong wood glue []  
-
-Result: Traffic light parts []  
-
-Next: Traffic light assembly [](#sec:traffic-light-assembly).  
-</div>  
-
-All parts should be glued together as showed in the pictures.
-
-
+All parts should be glued together as showed in the pictures for enhanced structural stability.
 
 ### Tube holder with big ground plate  
-
 
 <div figure-id="fig:G-1">
 <img src="images/G-1.jpg" style="width: 80%"/>
@@ -212,10 +220,13 @@ All parts should be glued together as showed in the pictures.
 </div>  
 
 ## Components of the traffic light {#tl-mat}
+
+Now that you have assembled the traffic light chassis, you are ready to add the electronics.
+
 <div figure-id="fig:tl_components">
 <img src="images/TL-01.jpg" style="width: 100%"/>
 <figcaption>
-Parts of a traffic light.
+Parts of a traffic light needed to complete these instructions.
 </figcaption>
 </div>
 
@@ -242,14 +253,11 @@ These components are needed for one traffic light:
 * SD card with Duckietown software
 * USB cable
 * Ethernet cable
+
+Additionally, the traffic light structure can host:
+
 * Traffic sign stands (4x)
-* Traffic sign stand supports (4x)
-
-To fix things the following is needed:
-
-* Tape
-* Double-Sided Tape
-* Wood glue or a hot glue gun
+* Traffic sign stand supports (4x).
 
 
 ## Assembling the Traffic Light
@@ -258,8 +266,10 @@ To fix things the following is needed:
 
 ### Put the LEDs into the housing
 
-Bend the LED strip at an angle to reduce
-the chance that the exposed soldered wires do not short.
+Bend the LED strip at an angle to reduce the chance that the exposed soldered wires short. The exposed part of the wires should **not** be in contact, **especially** when turning on the power.
+
+Warning: the actual traffic light in your hands might vary slightly from the pictures above. In particular, the electrical cables could have different colors or be soldered in different positions. Take note of what each color cable is soldered to, as same will go go with same on the other end.
+
 
 <div figure-id="fig:L-0">
 <img src="images/L-0.png" style="width: 80%"/>
@@ -378,9 +388,7 @@ Put the tubes into the tube holders.
 ### Connect the Raspberry Pi
 
 
-Use the spacers and the screws to mount the
-Raspberry Pi on the Raspberry Pi ground plate
-as shown in the Picture.
+Use the spacers and the screws to mount the Raspberry Pi on the Raspberry Pi ground plate as shown in [](#fig:TL-18).
 
 <div figure-id="fig:TL-18">
 <img src="images/TL-18.jpg" style="width: 80%"/>
@@ -437,29 +445,43 @@ Fully assembled traffic light.
 </figcaption>
 </div>
 
-Place the traffic light at an intersection such that the LEDs are exactly in the
-middle and are facing each incoming lane perpendicular.
-Use double-sided tape to fix the traffic light to the ground.
+Place the traffic light at an intersection such that the LEDs are exactly in the middle and are facing each incoming lane perpendicularly.
 
+You can verify the position is correct by verifying that Duckiebots at the red stop lines can see only one light blinking, and no reflections of LEDs facing other directions.
 
+You can finally use the provided double-sided tape pads to fix the traffic light to the tiles.
 
-### Image Prepare
-Prepare a Duckiebot image and remember to add your machine file (till 11.5)
+### SD-card image Preparation {#dt-ops-tl-prep status=beta}
 
-<!-- See: [](#setup-duckiebot) -->
-See setup-duckiebot
-and this chapter
-See rc-control
-<!-- See: [](#rc-control) -->
+At hardware and software level, traffic lights are Duckiebots without wheels. In initializing the SD-card of your traffic light, treat is as if it were a Duckiebot: [](+opmanual_duckiebot#setup-duckiebot).
 
-Please use "tlo" for all traffic light/camera tower username, and "trafficlight#" for hostname. (# indicate 1, 2, 3..etc.) Also we suggest you to give every traffic light a same password.
+For Robotarium users: please use `tlo` for all traffic light/camera tower username, and `trafficlight#` for hostname (# indicate 1, 2, 3, ...). Also we suggest you to give every traffic light the same password.
 
 After this step, you should have a traffic light image name.
 
     tlo@trafficlight1.local
 
+TODO: double check dockerization works flawlessly with traffic lights.
 
-### Launch Traffic Lights
+<!--
+
+`DB17` instructions
+
+Prepare a Duckiebot image following the instructions on `DB17` Duckiebot initialization and remember to generate the new machine file.
+
+
+See setup-duckiebot
+and this chapter
+See rc-control
+
+
+`DB18` instructions {#dt-ops-tl-init status=draft}
+ write detailed instruction, verify functionality with docker infrastructure
+
+-->
+
+### Launch Traffic Lights {#dt-ops-tl-launch status=draft}
+
 SSH into the traffic light, and source environment
 
     duckiebot $ cd ~/duckietown
@@ -469,9 +491,11 @@ After this step, launch traffic light node.
 
     duckiebot $ make traffic-light
 
-You should see the traffic light shining like crazy now.
+You should see the traffic light LEDs blinking in red and green.
 
-# Semantics of LEDS {#LED-semantics status=draft}
+<!--
+
+Semantics of LEDS {#LED-semantics status=draft}
 
 Assigned: ???
 
@@ -487,9 +511,9 @@ Assumption:
 
 tail lights: red, **6 hz square wave**
 
-traffic light "GO" = green, 1 hz** square wave**
+traffic light "GO" = green, **1 hz square wave**
 
-traffic light "STOP" = red, 1.5 Hz** square wave**
+traffic light "STOP" = red, **1.5 Hz** square wave**
 
 duckie light on top, state 0 = off
 
@@ -497,4 +521,8 @@ duckie light on top, state 1 = blue, **3 Hz, square wave**
 
 duckie light on top, state 2 = ?, **2.5 Hz square wave**
 
-duckie light on top, state 3 = ?,** ****2 Hz square wave**
+duckie light on top, state 3 = ?, **2 Hz square wave**
+
+verify if this info is still up to date.
+
+-->
