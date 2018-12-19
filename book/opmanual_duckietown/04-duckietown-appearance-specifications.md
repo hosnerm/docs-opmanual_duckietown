@@ -1,4 +1,4 @@
-# Appearance Specifications {#dt-ops-appearance-specifications status=beta}
+# Appearance Specifications {#dt-ops-appearance-specifications status=ready}
 
 <div class='requirements' markdown="1">
 
@@ -6,7 +6,7 @@ Requires: Nothing.
 
 Results: Knowledge of the Duckietown appearance specifications
 
-Next Steps: [Duckietowns and Duckiebots](#dt-ops-city-definitions), or [Duckietown assembly](#dt-ops-assembly ).
+Next Steps: [Duckietowns and Duckiebots](#dt-ops-city-definitions), or [Duckietown assembly](#dt-ops-assembly).
 
 </div>
 
@@ -38,7 +38,7 @@ Note that the visual appearance of the area where the Duckietown is created is v
 
 ## Layer 1 - The Floor Layer {#dt-ops-floor-app-specs status=ready}
 
-The floor layer is made of interlocking black tiles. Each tile represents one road element: straight, curve, 3-way intersection, 4-way intersection and empty tile. The road elements are interlocked to create Duckietowns. The tile types are shown in [](#fig:tiles). Note that the left turn and right turn tiles are symmetric: one is the 90 degree rotation of the other.
+The floor layer is made of interlocking black tiles. Each tile represents one road element: straight, curve, 3-way intersection, 4-way intersection and empty tile. The road elements are positioned in specific orders to create compliant Duckietowns. The road elements are shown in [](#fig:tiles), note that the left turn and right turn tiles are symmetric: one is the 90 degree rotation of the other.
 
 
 Each tile is square and measures 61 x 61 cm (2 ft x 2 ft) from the outer edges of the interlocking dents. The thickness of the tiles is not as important as the surface roughness. The objective is having good grip between the Duckiebots and the road in order to minimize slipping of the wheels.
@@ -77,7 +77,10 @@ Each tile is square and measures 61 x 61 cm (2 ft x 2 ft) from the outer edges o
     <img src="DT17_usage_three_way-texture.png" style='width: 8cm'/>
 </div>
 
-For tiles to become road elements, we need to apply road markings. Road markings in 2017-18 are obtained through the application of tapes of different colors and sizes.
+
+The empty tiles can be of any color, although it is discouraged to use the same colors as the road markings (red, white and yellow).
+
+For tiles to become road elements, we need to apply road markings. Road markings can be obtained through the application of tapes of different colors and sizes.
 
 ### Tapes {#dt-ops-app-spec-tapes status=ready}
 
@@ -86,14 +89,14 @@ There are 3 colors of tapes used in Duckietown: white, yellow, and red.
 #### White tape
 
 \begin{proposition}\label{prop:white_tape}
-A Duckiebot never collides with Duckiebots or other Duckietown elements if it never crosses or touches a white tape strip.
+A Duckiebot on a road never collides with Duckiebots or other Duckietown elements if it never crosses or touches a white tape strip.
 \end{proposition}
 
 Here are some facts about the white tapes:
 
 * White tapes must be solid (not dashed);
 
-* The width of the white tape is roughly 4.8cm (1.88 inches);
+* The width of the white tape is roughly **4.8 cm** (1.88 inches);
 
 * The white tape is always placed on the right hand side of a lane. We assume that the Duckiebots drive on the right hand side of the road.
 
@@ -125,16 +128,14 @@ Red tapes MAY **only** appear on **intersection** tiles.
 
 The width of the red tape must be the same as the white roll (roughly 4.8cm or 1.88 inches) and should cross the entire lane perpendicular to the road.
 
-The placement of red tape should always be **under** yellow and white tape, as shown, e.g., in [](#fig:DT17_usage_three_way) or [](#fig:DT17_usage_four_way).
+The placement of red tape should always be **under** yellow and white tape, as shown, e.g., in [](#fig:DT17_usage_four_way) or [](#fig:DT17_usage_three_way).
 
 A Duckiebot navigates Duckietown by a sequence of:
 
 * Navigating one or more straight tiles until a red tape appears,
-* Wait for the coordination signal,
-* Execute an intersection traversal,
-* Relocalize in a straight tile.
-
-The guarantee is:
+* Waiting for the coordination signal,
+* Executing an intersection traversal,
+* Re-localizing in a straight tile.
 
 \begin{proposition}
 If the Duckiebot stops before or ON the red strip, no collisions are possible.
@@ -163,9 +164,9 @@ Some examples of **non-conforming** topologies are shown in [](#fig:violates).
 </div>
 
 
-### Parking Lots {#parking}
+### Parking Lots {#parking status=draft}
 
-Note: An experimental new development.
+Note: The tile types described here are experimental. Use at your own risk!
 
 A parking lot is a place for Duckiebots to go when they are tired and need a rest.
 
@@ -181,16 +182,16 @@ The following are the rules for a conforming parking lot:
 
 1. One "parking spot" has size one tile.
 2. From each parking spot, there is a path to go to the parking lot entry tile that does not intersect any other parking spot. (i.e. when a Duckiebot is parked, nobody will disturb it).
-3. From any position in any parking spot, a Duckiebot can see at least two orthogonal lines or an sign with an April tag.
+3. From any position in any parking spot, a Duckiebot can see at least two orthogonal lines or a sign with an April tag.
 
 TODO: this point needs further specification
 
 
-### Launch Tiles {#launch-tiles}
+### Launch Tiles {#launch-tiles status=draft}
 
-Note: Experimental
+Note: The tile type described here is experimental. Use at your own risk!
 
-A "launch tile" is used to introduce a new Duckiebot into Duckietown in a controllable way. The launch file should be placed adjacent to a turn tile so that a Duckiebot may "merge" into Duckietown once the initialization procedure is complete.
+A "launch tile" is used to introduce a new Duckiebot into a Duckietown in a controllable way. The launch file should be placed adjacent to a turn tile so that a Duckiebot may "merge" into Duckietown once the initialization procedure is complete.
 
 TODO: Specification for tape on the launch tile
 
@@ -198,17 +199,37 @@ A "yield" sign should be visible from the launch tile.
 
 ## Layer 2 - Signage and Lights
 
-**IMPORTANT:** All signage should sit with base on the floor and stem coming through the connection between the tiles. Generally, it is advisable to adhere the sign to the floor with double-sided tape. **Under no circumstances should the white (any other tape) be obscured.**
+<!--
 
-## Traffic Signs {#traffic-signs status=beta}
+**IMPORTANT:** All signage should sit with base on the floor and stem coming through the connection between the tiles.
+
+-->
+
+Generally, it is advisable to adhere signal layer elements to the tiles with double-sided tape. **Under no circumstances should any tape be obscured by the base of the stands**. At least a 0.5 cm free (black) space should separate any line from a signal layer elements' base.     
+
+## Traffic Signs {#traffic-signs status=ready}
+
+Traffic signage in Duckietown in obtained through the union of a traffic signs and an April Tag, as shown in [](#fig:traffic-sign-example)
+
+<div figure-id="fig:traffic-sign-example" figure-caption="A traffic sign in Duckietown (do not print this one out!)">
+  <img src="traffic-sign-example.png" style='width: 30em; height:auto'/>
+</div>
+
+We call the symbol above _traffic sign_, while the code below is an AprilTag.
 
 Requires: To print and assemble the signs refer to [](#dt-ops-city-traffic-signs).
 
-### Specs
+### Specifications
 
-Center of signs are 13 cm height with apriltags of 6.5 cm sq. and a white border pasted below them.
+For traffic signage to be compliant:
 
-### Type
+* The center of the traffic signs is 13 cm height from the floor layer;
+* The AprilTag is 6.5 cm sq.;
+* There is a white border of roughly 0.8 cm around them;
+* The signage stands perpendicular to the ground, and the angle of the sign with the road is $90^ \circ$.
+* The signal is flat (no deformation / folding) and without wrinkles. This can be obtained, e.g., by printing the signs on thick paper.
+
+### Types
 
 The allowable traffic signs are as in [](#fig:traffic-signs).
 
