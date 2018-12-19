@@ -1,6 +1,10 @@
 # Assembly {#part:dt-ops-assembly status=ready}
 
-Here are some tips on how to assemble a Duckietown efficiently while respecting the [appearance specifications](#dt-ops-appearance-specifications).
+To assemble a Duckietown, follow the following workflow:
+
+## Read the appearance specifications
+
+You can find them here: [](#dt-ops-appearance-specifications).
 
 ## Design a map
 

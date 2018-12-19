@@ -1,5 +1,15 @@
 # Duckietowns and Duckiebots {#dt-ops-city-definitions status=beta}
 
+<div class='requirements' markdown="1">
+
+Requires: Knowledge of the [Duckietown appearance specifications](#dt-ops-appearance-specifications).
+
+Results: Knowledge of the relation between Duckietown and Duckiebots, or, what can Duckiebots do in different Duckietowns.
+
+Next Steps: [Duckietown assembly](#dt-ops-assembly).
+
+</div>
+
 Not all functionalities of the Duckiebots require all Duckietown city elements to work. If you are wondering what learning experiences you can explore with what Duckietown, you are in the right place. We define Duckietown configurations of increasing complexity depending on what Duckiebot functionalities they support.
 
 ## Only traffic signs (no city) {#dt-ops-no-city-def status=ready}
@@ -32,8 +42,11 @@ Thee more complex Duckiebot behaviors require intersections and other city eleme
 
 Navigable cities are city loops connected by intersections, meeting the appearance specification. Navigable cities require traffic signs.
 
-Navigable cities enable testing of Duckiebot behaviors. A complete list (for one or more Duckiebots) of behaviors can be found here: [](+opmanual_duckiebot#part:demos).
+Navigable cities enable testing of Duckiebot behaviors. A complete list (for one or more Duckiebots) of behaviors can be found here: [](https://github.com/duckietown/docs-robotarium/blob/master/book/robotarium/00_book_robotarium.md).
 
 ## Robotarium {#dt-ops-robotarium-def status=ready}
 
-Robotariums (Robotic aquariums) are experimental Duckietowns designed for continuous operations. Robotariums require a maintenance area in addition to a Duckietown, providing essential functions like automatic charging. More information on Robotariums can be found here: [](+robotarium#book:robotarium).
+Robotariums (Robotic aquariums) are experimental Duckietowns designed for continuous operations. Robotariums require a maintenance area in addition to a Duckietown, providing essential functions like automatic charging. More information on Robotariums can be found in the [Robotarium book](https://github.com/duckietown/docs-robotarium).
+
+
+TODO: switch last two links with proper inter-book references
