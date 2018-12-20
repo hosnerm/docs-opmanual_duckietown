@@ -4,7 +4,7 @@
 
 Requires: Material: Traffic light components. To obtain them contact info@duckietown.org.
 
-Requires: An [initialized SD-card](+opmanual_duckiebot#).
+Requires: An [initialized SD-card](+opmanual_duckiebot#setup-duckiebot).
 
 Requires: Tools: (strong) wood glue or hot glue gun, tape, double-sided tape.
 
