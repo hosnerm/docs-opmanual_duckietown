@@ -453,15 +453,25 @@ You can finally use the provided double-sided tape pads to fix the traffic light
 
 ### SD-card image Preparation {#dt-ops-tl-prep status=beta}
 
-At hardware and software level, traffic lights are Duckiebots without wheels. In initializing the SD-card of your traffic light, treat is as if it were a Duckiebot: [](+opmanual_duckiebot#setup-duckiebot).
+At hardware and software level, traffic lights are Duckiebots without wheels. In initializing the SD-card of your traffic light, treat is as if it were a Duckiebot: [](+opmanual_duckiebot#setup-duckiebot). Don't forget the `--compress` option for 16GB sd cards.
 
-For Robotarium users: please use `tlo` for all traffic light/camera tower username, and `trafficlight#` for hostname (# indicate 1, 2, 3, ...). Also we suggest you to give every traffic light the same password.
+- For Robotarium users: since traffic lights are coupled to watchtowers, please use the watchtower setup:
+        hostname : watchtowerXX
+        linuxname : mom
+        password: MomWatches
+
+- However, if you just want to use it as a traffic light, use the trafficlight setup:
+        hostname : trafficlightXX
+        linuxname : tlo
+        password: quackquack
 
 After this step, you should have a traffic light image name.
 
-    tlo@trafficlight1.local
+    tlo@trafficlight01.local
+or
 
-TODO: double check dockerization works flawlessly with traffic lights.
+    mom@watchtower01.local 
+
 
 <!--
 
@@ -480,18 +490,11 @@ See rc-control
 
 -->
 
-### Launch Traffic Lights {#dt-ops-tl-launch status=draft}
+### Launch Traffic Lights {#dt-ops-tl-launch status=ready}
+To download and run the trafficlight docker image, simply run:
 
-SSH into the traffic light, and source environment
+    docker -H ![hostname].local run -dit --privileged --name trafficlight --network=host duckietown/traffic_lights
 
-    duckiebot $ cd ~/duckietown
-    duckiebot $ git checkout TL-megacity
-
-After this step, launch traffic light node.
-
-    duckiebot $ make traffic-light
-
-You should see the traffic light LEDs blinking in red and green.
 
 <!--
 
