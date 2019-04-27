@@ -1,6 +1,4 @@
-# Auto-Localization Software Preparation {#auto-localization-software status=draft}
-
-Assigned: Chen-Lung Eric Lu, Josefine Quack
+# Auto-Localization Software Preparation {#auto-localization-software status=beta}
 
 Here we demonstrated how to prepare the Duckietown software on watchtowers for auto-localization function.
 

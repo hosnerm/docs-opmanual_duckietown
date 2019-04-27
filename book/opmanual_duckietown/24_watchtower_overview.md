@@ -1,16 +1,14 @@
 # Auto-Localization Overview {#auto-localization-overview status=draft}
 
-Assigned: Chen-Lung Eric Lu, Josefine Quack
-
 The auto-localization system is an important part of AI-DO competition. Since we need to score each team with the performances of their cars, it's necessary to have a system to localize and track the movement of these Duckiebots.
 
 ## Overview
 
 The whole purpose of the auto-localization is to localize all Duckiebots in a Duckietown. By this, we could track them and score them in the AI-DO competition.
 
-The concept behind the auto-localization is by using the detections of Apriltags. Each Duckiebots is provided with a plates, on the plate there's an Apriltags. Thus, by tracking the Apriltags on Duckiebots, we could calculate their poses.
+The concept behind the auto-localization is by using the detection of Apriltags. Each Duckiebots is provided with a plates, on the plate there's an Apriltags. Thus, by tracking the Apriltags on Duckiebots, we could calculate their poses.
 
-Moreover, Since it's Duckie"town". We mean to build our camera system that integrate with the city but not a overhead camera which basically have nothing to do with the infrastructure. Thus, we develop a little tower which is about 60cm in height. At the top of the tower, there's a camera which looks over a part of the city. We called it a "watchtower". The watchtowers are spreaded all over the city, and combine with the field of views of each tower, it is possible to surveillant the whole area.
+Moreover, Since it's Duckie"town". We mean to build our camera system that integrate with the city but not a overhead camera which basically have nothing to do with the infrastructure. Thus, we develop a little tower which is about 60cm in height. At the top of the tower, there's a camera which looks over a part of the city. We called it a "watchtower". The watchtowers are spread all over the city, and combine with the field of views of each tower, it is possible to cover the whole area.
 
 ## The Basic Concept of the System
 
@@ -20,7 +18,6 @@ The watchtower first sees tags which are on the robots and on the side of the ro
 
 Last, since the server computer contains a data base that contains the transformations matrix from reference tags frames to the origin frame, it could easily convert the pose from local references to the global origin point.
 
-TODO: Add concept picture
 
 ## Hardware
 
