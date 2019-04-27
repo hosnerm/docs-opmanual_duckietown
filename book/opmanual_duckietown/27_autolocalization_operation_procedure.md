@@ -1,6 +1,8 @@
-# Auto-Localization Operation Procedure {#auto-localization-operation-procedure status=draft}
+# Auto-Localization Operation Procedure {#auto-localization-operation-procedure status=beta}
 
 TODO: Move this to the Robotarium book.
+
+TODO: add knowledge box
 
 In this document, we wrote down the procedure of launching Auto-localization system.
 

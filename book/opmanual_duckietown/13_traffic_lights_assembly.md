@@ -470,7 +470,7 @@ After this step, you should have a traffic light image name.
     tlo@trafficlight01.local
 or
 
-    mom@watchtower01.local 
+    mom@watchtower01.local
 
 
 <!--
@@ -499,8 +499,6 @@ To download and run the trafficlight docker image, simply run:
 <!--
 
 Semantics of LEDS {#LED-semantics status=draft}
-
-Assigned: ???
 
 headlights: white, constant
 
