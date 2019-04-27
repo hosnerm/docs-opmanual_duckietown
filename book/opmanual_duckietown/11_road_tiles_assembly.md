@@ -1,4 +1,4 @@
-# Road Tiles Assembly {#dt-ops-tiles status=draft}
+# Road Tiles Assembly {#dt-ops-tiles status=beta}
 
 <div class='requirements' markdown="1">
 
@@ -50,4 +50,4 @@ Each intersection road segment (3- or 4- way) has:
 Start by placing the red markings. You can then cover them with the white and yellow ones.
 
 
-TODO: add links to laser cutting templates for precise building (contact jacopo@duckietown.org in case of need). 
+TODO: add links to laser cutting templates for precise building (contact jacopo@duckietown.org in case of need).

@@ -1,4 +1,4 @@
-# Traffic Signs Assembly {#dt-ops-city-traffic-signs status=draft}
+# Traffic Signs Assembly {#dt-ops-city-traffic-signs status=ready}
 
 <div class='requirements' markdown="1">
 
@@ -8,7 +8,7 @@ Results: A set of signs to be used for assembling your Duckietown.
 
 </div>
 
-## Build a map
+## Build a Map
 
 Before beginning with sign assembly you should design a map that adheres to [the specification](#dt-ops-appearance-specifications).
 
@@ -59,11 +59,11 @@ The value of `![NEW_STREET_NAME]` is up to you to decide (have fun with it!). Th
 
 When finished, regenerate the PDF version of the Word file, and commit everything to the repo (via a pull request of course).
 
-Note: It is also possible of course to start you own completely different signs and tags database, but make sure that you specify in the april_tags code which database to load from.
+Note: It is also possible of course to start you own completely different signs and tags database, but make sure that you specify in the `april_tags` code which database to load from.
 
 TODO: Update the way that the april tags code loads the database
 
-## Assembly
+## Traffic Signs Assembly
 
 ### Print the signals
 
