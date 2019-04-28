@@ -164,7 +164,7 @@ Some examples of **non-conforming** topologies are shown in [](#fig:violates).
 </div>
 
 
-### Parking Lots {#parking status=draft}
+### Parking Lots {#parking status=beta}
 
 Note: The tile types described here are experimental. Use at your own risk!
 
@@ -187,7 +187,7 @@ The following are the rules for a conforming parking lot:
 TODO: this point needs further specification
 
 
-### Launch Tiles {#launch-tiles status=draft}
+### Launch Tiles {#launch-tiles status=beta}
 
 Note: The tile type described here is experimental. Use at your own risk!
 
@@ -375,4 +375,4 @@ The Raspberry Pi should sit on a pole that is based at the corner of the tile ou
 
 -->
 
-The computational stack of the traffic light should be mounted in the appropriate housing outside the allowable driving region. The cabling should be housed in the appropriate structure as detailed in [](#traffic-light-assembly). The traffic light pillar stands should be positioned in such a way that the embedded traffic sign stands respect the above specifications for traffic light stands. 
+The computational stack of the traffic light should be mounted in the appropriate housing outside the allowable driving region. The cabling should be housed in the appropriate structure as detailed in [](#traffic-light-assembly). The traffic light pillar stands should be positioned in such a way that the embedded traffic sign stands respect the above specifications for traffic light stands.

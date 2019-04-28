@@ -1,4 +1,4 @@
-# Traffic Lights Assembly {#traffic-light-assembly status=beta}
+# Traffic Lights Assembly {#traffic-light-assembly status=ready}
 
 <div class='requirements' markdown="1">
 
@@ -451,7 +451,7 @@ You can verify the position is correct by verifying that Duckiebots at the red s
 
 You can finally use the provided double-sided tape pads to fix the traffic light to the tiles.
 
-### SD-card image Preparation {#dt-ops-tl-prep status=beta}
+### SD-card image Preparation {#dt-ops-tl-prep status=ready}
 
 At hardware and software level, traffic lights are Duckiebots without wheels. In initializing the SD-card of your traffic light, treat is as if it were a Duckiebot: [](+opmanual_duckiebot#setup-duckiebot). Don't forget the `--compress` option for 16GB sd cards.
 

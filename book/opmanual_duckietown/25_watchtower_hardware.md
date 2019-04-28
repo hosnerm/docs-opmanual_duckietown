@@ -1,6 +1,6 @@
-# Auto-Localization Hardware Preparation {#auto-localization-hardware status=draft}
+# Auto-Localization Hardware Preparation {#auto-localization-hardware status=beta}
 
-This document teaches you how to prepare a whole set of watchtower, which includes, hardware preparation, hardware assembly, image preparation and setting up watchtowers in a city.
+This document teaches you how to prepare a whole set of watchtower, which includes hardware preparation, hardware assembly, image preparation and setting up watchtowers in a city.
 
 ## Overview
 
