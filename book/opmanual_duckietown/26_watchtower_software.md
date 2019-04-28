@@ -1,4 +1,4 @@
-# Auto-Localization Software Preparation {#auto-localization-software status=beta}
+# Auto-Localization Software Preparation {#auto-localization-software status=ready}
 
 Here we demonstrated how to prepare the Duckietown software on watchtowers for auto-localization function.
 

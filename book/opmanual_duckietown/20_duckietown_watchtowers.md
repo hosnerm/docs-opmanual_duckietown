@@ -1,6 +1,6 @@
 # Watchtowers {#part:dt-ops-watchtowers status=beta}
 
-WARNING : This part is outdated!
+WARNING: This part is outdated!
 
 Watchtowers enable the actual Duckietown city to sense what is going on in its roads.
 
