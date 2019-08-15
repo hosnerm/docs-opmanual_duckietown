@@ -2,13 +2,13 @@
 
 <div class='requirements' markdown="1">
 
-Requires: The materials to build Duckietown signals.
+Requires: Traffic Sign Stands Pack
 
 Results: A set of signs to be used for assembling your Duckietown.
 
 </div>
 
-## Build a Map
+## Build a Map {build_a_map}
 
 Before beginning with sign assembly you should design a map that adheres to [the specification](#dt-ops-appearance-specifications).
 
@@ -67,17 +67,37 @@ TODO: Update the way that the april tags code loads the database
 
 ### Print the signals
 
-TODO: add pdfs with intersections
-
-First, you should print out the pdf version of the signs and tags file on the thickest card stock available. Cut the signs out with a straight edge and a very sharp knife, leaving a small border of white around the sign.
+First, you should print out the pdf version of the signs and tags file on the thickest card stock available. Templates can be found in the above chapter [Build a Map](#making-new-signage). Cut the signs out with a straight edge and a very sharp knife, leaving a small border of white around the sign.
 
 ### Assemble the stands
 
-Assemble the wooden base of the signals, according to the following instructions.
 
-TODO: write
+The picture below shows the parts needed for the assembly of a traffic sign stand ([](#fig:trafficsign_stand_kit)). There is one base plate, one plate to attach the traffic sign and two mounting parts.
 
-Then use the provided sticker to affix the the paper sign to the wooden base.
+<div figure-id="fig:trafficsign_stand_kit">
+<img src="images/traffic_stand/trafficsign_stand_kit.png" style="width: 30%"/>
+<figcaption>
+Hardware included in a Traffic Sign Stands Pack.
+</figcaption>
+</div>
+
+The four parts can be stacked together as in the following picture ([](#fig:trafficsign_stand_assembly)). Attach a piece of double sided tape on the stand to mount the traffic sign. Make sure the parts are stacked together rigidly and therefore the plate where the traffic sign will be attached is standing vertically. This is necessary to ensure that the Duckiebot will recognize the traffic sign properly.
+
+<div figure-id="fig:trafficsign_stand_assembly">
+<img src="images/traffic_stand/trafficsign_stand_assembly.png" style="width: 15%"/>
+<figcaption>
+Assembled Traffic Sign Stand.
+</figcaption>
+</div>
+
+Now you only need to mount your traffic sign to the stand and you are already done. The finished traffic sign stand looks as in the next picture ([](#fig:trafficsign_stand_assembled)).
+
+<div figure-id="fig:trafficsign_stand_assembled">
+<img src="images/traffic_stand/trafficsign_stand_assembled.png" style="width: 15%"/>
+<figcaption>
+Complete Traffic Sign Stand.
+</figcaption>
+</div>
 
 ## Placement
 

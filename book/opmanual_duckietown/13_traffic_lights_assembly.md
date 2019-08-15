@@ -26,9 +26,8 @@ Traffic lights are crucial parts in modern cities. We rely on them to have well-
 
 -->
 
-Traffic lights are composed of two wooden boxes on the diagonal direction of an intersection. One of them is equipped with the computational stack and connection to the a camera.
-
-TODO: Add a photo of one intersection with a **new model** traffic light (as in pics below).
+Traffic lights are composed of two wooden stands standing on opposing sides of the diagonal direction of an intersection. One of them is equipped with the computational stack and connection to a camera, the other one only serves as physical support for the tube.
+The stand with the computational stack inside is designed to fulfill the purpose needed for a traffic light as well as serving as a Watchtower. A Watchtower is a system which is used in [Autolabs](+opmanual-autolab#part:autolab-definition) to  serve as localization system. As the hardware is exactly the same, we will first jump to the [instructions to build a Watchtower](+opmanual_autolab#part:watchtower-hardware) and then come back to this section to make the adjustments needed to turn a Watchtower into a traffic light. You do not need to understand what the purpose of a Watchtower is to finish the assembly of your traffic light. If you are interested in the functionality of the localization system though, you will find [this section](+opmanual_autolab##part:autolab-localization) interesting. A picture of the final result is found in[](#fig:TL-25).
 
 <!--
 
@@ -40,53 +39,14 @@ Traffic lights node are expected to launch whenever they turn on.
 
 This section shows how to assemble the components from the laser cut traffic light parts.
 
-Warning: The small parts with the hole in the middle, i.e., the ones in the left of [](#fig:G-1), are not all equal. Some have a round hole, others a polygonal hole. Double check you are using the right ones in the process (compare with the pics).
+Warning: The small parts with the hole in the middle, i.e., the ones in the top part of [](#fig:G2-1), are not all equal. Some have a round hole, others a polygonal hole. Double check you are using the right ones in the process (compare with the pics).
 
 All parts should be glued together as showed in the pictures for enhanced structural stability.
 
-### Tube holder with big ground plate  
+### Build the Stand for the Raspberry Pi, a.k.a. a Watchtower
 
-<div figure-id="fig:G-1">
-<img src="images/G-1.jpg" style="width: 80%"/>
-<figcaption>
-</figcaption>
-</div>  
-<div figure-id="fig:G-2">
-<img src="images/G-2.jpg" style="width: 50%"/>
-<figcaption>
-</figcaption>
-</div>  
-<div figure-id="fig:G-3">
-<img src="images/G-3.jpg" style="width: 50%"/>
-<figcaption>
-</figcaption>
-</div>  
-<div figure-id="fig:G-4">
-<img src="images/G-4.jpg" style="width: 50%"/>
-<figcaption>
-</figcaption>
-</div>  
-<div figure-id="fig:G-5">
-<img src="images/G-5.jpg" style="width: 50%"/>
-<figcaption>
-</figcaption>
-</div>  
-<div figure-id="fig:G-6">
-<img src="images/G-6.jpg" style="width: 50%"/>
-<figcaption>
-</figcaption>
-</div>    
+As previously mentioned, we will start by building the stand with the Raspberry Pi inside, using the instructions from [here](+opmanual_autolab#part:watchtower-hardware).
 
-<div figure-id="fig:G-7">
-<img src="images/G-7.jpg" style="width: 50%"/>
-<figcaption>
-</figcaption>
-</div>  
-<div figure-id="fig:G-8">
-<img src="images/G-8.jpg" style="width: 80%"/>
-<figcaption>
-</figcaption>
-</div>  
 
 ### Tube holder with small ground plate
 
@@ -161,19 +121,6 @@ All parts should be glued together as showed in the pictures for enhanced struct
 </figcaption>
 </div>  
 
-
-
-### Ground module cover
-<div figure-id="fig:C-01">
-<img src="images/C-01.jpg" style="width: 50%"/>
-<figcaption>
-</figcaption>
-</div>  
-<div figure-id="fig:C-02">
-<img src="images/C-02.jpg" style="width: 50%"/>
-<figcaption>
-</figcaption>
-</div>  
 
 
 ### Joint module

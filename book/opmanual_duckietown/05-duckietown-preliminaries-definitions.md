@@ -38,15 +38,15 @@ If you acquired a Duckietown Starter Pack, you have a city loop with traffic sig
 
 ## Navigable cities {#dt-ops-nav-def status=ready}
 
-Thee more complex Duckiebot behaviors require intersections and other city elements such as traffic lights to work. We define cities that include intersections as _navigable_ cities.
+The more complex Duckiebot behaviors require intersections and other city elements such as traffic lights to work. We define cities that include intersections as _navigable_ cities.
 
-Navigable cities are city loops connected by intersections, meeting the appearance specification. Navigable cities require traffic signs.
+Navigable cities are city loops connected by intersections, meeting the appearance specification. Navigable cities require traffic signs for intersection navigation.
 
-Navigable cities enable testing of Duckiebot behaviors. A complete list (for one or more Duckiebots) of behaviors can be found in the [demo section](https://github.com/duckietown/docs-robotarium/blob/master/book/robotarium/00_book_robotarium.md) of the Duckiebot operation manual.
+Navigable cities enable testing of Duckiebot behaviors. A list (for one or more Duckiebots) of behaviors can be found in the [Autolab book](https://github.com/duckietown/docs-opmanual_autolab/blob/master19/book/opmanual_autolab/00_book_autolab.md).
 
-## Robotarium {#dt-ops-robotarium-def status=ready}
+## Autolab {#dt-ops-autolab-def status=ready}
 
-Robotariums (Robotic aquariums) are experimental Duckietowns designed for continuous operations. Robotariums require a maintenance area in addition to a Duckietown, providing essential functions like automatic charging. More information on Robotariums can be found in the [Robotarium book](https://github.com/duckietown/docs-robotarium).
+Autolabs are experimental extended Duckietowns designed for continuous operation. Autolabs require a maintenance area in addition to a Duckietown, providing essential functions like automatic charging. More information on Autolabs can be found in the [Autolab book](https://github.com/duckietown/docs-opmanual_autolab/blob/master19/book/opmanual_autolab/00_book_autolab.md).
 
 
-TODO: switch last two links with proper inter-book references
+TODO: links now pointing to right address but not on book but on github. change that.

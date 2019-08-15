@@ -102,10 +102,10 @@ Here are some facts about the white tapes:
 
 Comment: this should be part of the "traffic rules" sections.
 
-* For curved roads, the white lane marker is formed by five pieces of white tape, while the inner corner is formed by three pieces, placed according to the specifications in the image below, where the edge pieces are matched to adjacent straight or curved tiles ([](#fig:curved)).
+* For curved roads, the white lane marker is formed by five pieces of white tape, while the inner corner is formed by two pieces, placed according to the specifications in the image below, where the edge pieces are matched to adjacent straight or curved tiles ([](#fig:curved)).
 
 <div figure-id="fig:curved" figure-caption="The specification for a curved road tile">
-  <img src="curved_road.png" style='width: 30em; height:auto'/>
+  <img src="images/tiles/curved_tile_real.png" style='width: 30em; height:auto'/>
 </div>
 
 #### Yellow tape
@@ -163,8 +163,8 @@ Some examples of **non-conforming** topologies are shown in [](#fig:violates).
     </div>
 </div>
 
-
-### Parking Lots {#parking status=beta}
+<!--
+### Parking Lots {#parking status=draft}
 
 Note: The tile types described here are experimental. Use at your own risk!
 
@@ -187,7 +187,7 @@ The following are the rules for a conforming parking lot:
 TODO: this point needs further specification
 
 
-### Launch Tiles {#launch-tiles status=beta}
+### Launch Tiles {#launch-tiles status=draft}
 
 Note: The tile type described here is experimental. Use at your own risk!
 
@@ -196,7 +196,7 @@ A "launch tile" is used to introduce a new Duckiebot into a Duckietown in a cont
 TODO: Specification for tape on the launch tile
 
 A "yield" sign should be visible from the launch tile.
-
+-->
 ## Layer 2 - Signage and Lights
 
 <!--
