@@ -2,7 +2,7 @@
 
 <div class='requirements' markdown="1">
 
-Requires: Material: Traffic light components. To obtain them contact info@duckietown.org.
+Requires: Material: Traffic light components. To obtain them visit the [Duckietown homepage](https://get.duckietown.org/).
 
 Requires: An [initialized SD-card](+opmanual_duckiebot#setup-duckiebot).
 
@@ -10,6 +10,9 @@ Requires: Tools: (strong) wood glue or hot glue gun, tape, double-sided tape.
 
 Result: Traffic light.    
 </div>  
+
+Warning: For Watchtowers and traffic lights we use naming conventions. Have a look at [traffic light naming conventions](#dt-ops-tl-prep) or [Watchtower naming conventions](+opmanual_autolab#watchtower-initialization) for more information.
+
 
 
 Traffic lights are useful to coordinate traffic at intersections. Traffic lights can be used at three or four way intersections. Hardware wise, Traffic lights are Duckiebots without wheels, and a beautiful different chassis.
@@ -26,7 +29,7 @@ Traffic lights are crucial parts in modern cities. We rely on them to have well-
 
 -->
 
-Traffic lights are composed of two wooden stands standing on opposing sides of the diagonal direction of an intersection. One of them is equipped with the computational stack and connection to a camera, the other one only serves as physical support for the tube.
+Traffic lights are composed of two wooden stands standing on opposing sides of the diagonal of an intersection. One of them is equipped with the computational stack and connection to a camera, the other one only serves as physical support for the tube.
 The stand with the computational stack inside is designed to fulfill the purpose needed for a traffic light as well as serving as a Watchtower. A Watchtower is a system which is used in [Autolabs](+opmanual-autolab#part:autolab-definition) to  serve as localization system. As the hardware is exactly the same, we will first jump to the [instructions to build a Watchtower](+opmanual_autolab#part:watchtower-hardware) and then come back to this section to make the adjustments needed to turn a Watchtower into a traffic light. You do not need to understand what the purpose of a Watchtower is to finish the assembly of your traffic light. If you are interested in the functionality of the localization system though, you will find [this section](+opmanual_autolab##part:autolab-localization) interesting. A picture of the final result is found in[](#fig:TL-25).
 
 <!--
@@ -400,17 +403,13 @@ You can finally use the provided double-sided tape pads to fix the traffic light
 
 ### SD-card image Preparation {#dt-ops-tl-prep status=ready}
 
-At hardware and software level, traffic lights are Duckiebots without wheels. In initializing the SD-card of your traffic light, treat is as if it were a Duckiebot: [](+opmanual_duckiebot#setup-duckiebot). Don't forget the `--compress` option for 16GB sd cards.
+At hardware and software level, traffic lights are Duckiebots without wheels. In initializing the SD-card of your traffic light, treat is as if it were a Duckiebot: [](+opmanual_duckiebot#setup-duckiebot).
 
-- For Robotarium users: since traffic lights are coupled to watchtowers, please use the watchtower setup:
-        hostname : watchtowerXX
-        linuxname : mom
-        password: MomWatches
+ traffic light naming convention:
 
-- However, if you just want to use it as a traffic light, use the trafficlight setup:
-        hostname : trafficlightXX
-        linuxname : tlo
-        password: quackquack
+* hostname : trafficlightXX
+* linux-username : tlo
+* password: quackquack
 
 After this step, you should have a traffic light image name.
 
