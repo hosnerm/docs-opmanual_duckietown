@@ -28,6 +28,7 @@ Each straight road segment has:
  * Dashed yellow markings at the center
  * Each lane is 21 cm wide (from end of white to beginning of yellow)
 
+### Assembly
 
 Start by placing the yellow tape in the middle of the tile as shown in [](#fig:tile_instruction_straight_1).
 
@@ -44,7 +45,7 @@ This means from the end of the yellow tape to the end of the tile there should b
   <img style="width: 100%; height: auto;" src="opmanual_duckietown/images/tiles/instructions/straight_2_done.png"/>
 </div>
 
-Once you have placed the yellow tape, cut out pieces of 2.5cm each, starting 5cm from the outer edge of the tile without the interlocking teeth (as shown in [](#fig:tile_instruction_straight_3).
+Once you have placed the yellow tape, cut out pieces of 2.5cm each, starting 5cm from the outer edge of the tile without the interlocking teeth (as shown in [](#fig:tile_instruction_straight_3)).
 Next, place the white lane markings at the outer part of the tile in a distance of 21cm to the end of the yellow tape.
 The Result can be seen in [](#fig:tile_instruction_straight_3).  
 
@@ -61,11 +62,13 @@ Each curved road segment has:
  * Solid white markings on the outer sides of the lanes (right of direction of travel)
  * Dashed yellow markings at the center
  * Each lane is 21 cm wide (from end of white to beginning of yellow)
+ 
+### Assembly 
 
 If you have a laser cutter available, you can use the provided file from [here]() to laser cut the template shown below. 
 
 If you do not have access to a laser cutter, you have to create the middle line by hand. One way to do it is to take a string, place one end in the outer edge of the tile (excluding the interlocking teeth) and make small markings in the form of a quarter circle in a distance of 27.25cm.
-This represents the inner border of where you have to put the yellow tape. The length of the single tape pieces is 5cm as for the straight road segment. For more detailed measurements, refer to [](#dt-ops-appearance-specifications).
+This represents the inner border of where you have to put the yellow tape. The length of the single tape pieces is 5cm as for the straight road segment. For more detailed measurements, refer to [](#fig:curved).
 
 <div figure-id="fig:tile_instruction_curved_1">
   <figcaption> Placement of the yellow tape. </figcaption>
@@ -84,7 +87,7 @@ Once you have the middle of the lane in place, you are ready to add the inner wh
   <img style="width: 100%; height: auto;" src="opmanual_duckietown/images/tiles/instructions/curved_3_done.png"/>
 </div>
 
-To add the outer white line you can either use the template from above or you will have to measure again. You can use the same technique as for the yellow middle line: place one end of a rope in the edge of the tile and draw a quarter circle with a radius of 50.75cm which will represent the inner boundary of the white tape. 
+To add the outer white line you can either use another template from above or you will have to measure again. You can use the same technique as for the yellow middle line: place one end of a rope in the edge of the tile and draw a quarter circle with a radius of 50.75cm which will represent the inner boundary of the white tape. 
 Alternatively, you can mark the lane width of 21cm at different locations and place the white tape accordingly.  
 
 <div figure-id="fig:tile_instruction_curved_4">
@@ -119,7 +122,7 @@ Each intersection road segment (3- or 4- way) has:
  * Each lane is 21 cm wide (from end of white to beginning of yellow)
  * Solid red markings as stop signs
 
-### 4-way intersection
+### Assembly of 4-way intersection
 
 First, place four yellow tape strips as shown in the pictures below. Make sure that they are centered on the tile and that they reach in 6cm from the beginning of the tile without the interlocking teeth. 
 
@@ -168,9 +171,9 @@ The finished 4-way intersection lane segment looks as in [](#fig:tile_instructio
   <img style="width: 100%; height: auto;" src="opmanual_duckietown/images/tiles/instructions/4way_7_done.png"/>
 </div>
 
-Tip: You don't have to cut out the edges of the interlocking teeth from the white tape, just place the intersection road segment with the white tape as shown in the picture above and use the tape to connect it to the surrounding tiles nicely. 
+Tip: You don't have to cut out the edges of the interlocking teeth from the white tape. Just use the overlapping tape to connect the road segment to the surrounding tiles nicely. 
 
-### 3-way intersection 
+### Assembly of 3-way intersection 
 
 3-way intersections are built the same way as 4-way intersections with the difference that on one edge white tape is placed instead of red and yellow. 
 The resulting 3-way intersection can be seen in [](#fig:tile_instruction_3way_1). 
